@@ -1,0 +1,49 @@
+.containerCalendar{border:1px solid #7F9DB9;width:170px;height:19px;background-color:White;text-align:left;clear:left;padding:0px;margin:0px;position:relative;}
+.containerCalendar .displayText{border:1px solid #FFF;width:99%;height:17px;font-size:9pt;font-family:Tahoma, Arial, sans-serif;float:left;padding:0px;margin:0px;}
+.containerCalendar .btn{background-image:url('../Images/Btn.gif');background-position:0 0;background-repeat:no-repeat;width:17px;height:19px;position:absolute;right:-1px;top:0px;border-right:1px solid #7F9DB9;}
+.containerCalendar .btn_over{background-image:url('../Images/Btn.gif');background-position:0 -19px;background-repeat:no-repeat;width:17px;height:19px;position:absolute;right:-1px;top:0px;border-right:1px solid #7F9DB9;cursor:pointer;}
+.chooseMY *{text-align:center;}
+.chooseMY .month{width:60px;cursor:pointer;padding:3px 5px;}
+.chooseMY .year{width:40px;cursor:pointer;padding:3px 5px;}
+.chooseMY .monthSelected{width:60px;cursor:pointer;padding:3px 5px;background-color:#93A7BA !important;color:White !important;}
+.chooseMY .yearSelected{width:40px;cursor:pointer;padding:3px 5px;background-color:#93A7BA !important;color:White !important;}
+.listDayCalendar{position:absolute;top:-1000px;left:-1000px;background-color:#FFF;text-align:left;-webkit-box-shadow:2px 2px 2px #A0A0A0;-moz-box-shadow:2px 2px 2px #A0A0A0;box-shadow:2px 2px 2px #A0A0A0;}
+.listDayCalendar .tableContainer{font-family:Tahoma, Arial, sans-serif;font-size:9pt;border:solid 1px #A0A0A0;border-collapse:collapse;text-align:left;}
+.listDayCalendar .tableContainer .cell{border:solid 1px #A0A0A0;}
+.listDayCalendar .tableContainer .cellHeader{background-color:#C1E0FF;}
+.listDayCalendar .tableContainer .header{padding:0px;margin:1px 0px;border:solid 0px;border-collapse:collapse;}
+.listDayCalendar .tableContainer .header td{color:Black;text-align:center;border-width:0px !important;padding:0px;}
+.listDayCalendar .tableContainer .header .showMonthAndYear{cursor:pointer;}
+.listDayCalendar .tableContainer .header .btnNextMonth,
+.chooseMY .btnNextYearMY{width:20px;height:18px;display:block;cursor:pointer;background-image:url(../Images/BtnPreNext.gif);background-position:0 -36px;}
+.listDayCalendar .tableContainer .header .btnNextMonth:hover,
+.chooseMY .btnNextYearMY:hover{background-position:0 -54px;}
+.listDayCalendar .tableContainer .header .btnPreviousMonth,
+.chooseMY .btnPreviousYearMY{width:20px;height:18px;display:block;cursor:pointer;background-image:url(../Images/BtnPreNext.gif);background-position:0 0;}
+.listDayCalendar .tableContainer .header .btnPreviousMonth:hover,
+.chooseMY .btnPreviousYearMY:hover{background-position:0 -18px;}
+.listDayCalendar .tableContainer .header .btnNextYear{width:22px;height:18px;display:block;cursor:pointer;background-image:url(../Images/BtnPreNext.gif);background-position:-20px -36px;margin-left:1px;}
+.listDayCalendar .tableContainer .header .btnNextYear:hover{background-position:-20px -54px;}
+.listDayCalendar .tableContainer .header .btnPreviousYear{width:22px;height:18px;display:block;cursor:pointer;background-image:url(../Images/BtnPreNext.gif);background-position:-20px 0;margin-right:1px;}
+.listDayCalendar .tableContainer .header .btnPreviousYear:hover{background-position:-20px -18px;}
+.listDayCalendar .tableContainer .body{padding:0px;margin:10px 20px;}
+.listDayCalendar .tableContainer .body td{color:Black;text-align:center;padding:3px;width:25px;height:20px;cursor:default;}
+.listDayCalendar .tableContainer .body .dateNow{text-align:center;padding:2px;margin:0px;border:solid 1px Red !important;}
+.listDayCalendar .tableContainer .body .dateSelected{text-align:center;background-color:#93A7BA !important;color:White !important;}
+.listDayCalendar .tableContainer .body .dayOfWeek{border-bottom:1px solid #CFCFCF !important;}
+.listDayCalendar .tableContainer .body .dayNotInMonth{color:#ACACAC;cursor:pointer !important;}
+.listDayCalendar .tableContainer .body .solar{text-align:left !important;font-size:14px !important;}
+.listDayCalendar .tableContainer .body .lunar{text-align:right !important;font-size:8px !important;}
+.listDayCalendar .tableContainer .body .dayInWeek{color:Black;background-color:#FFF;cursor:pointer !important;}
+.listDayCalendar .tableContainer .body .weekend{color:#FE3C00;background-color:#FFF;cursor:pointer !important;}
+.listDayCalendar .tableContainer .body .dayNotInMonth:hover,
+.listDayCalendar .tableContainer .body .dayInWeek:hover,
+.listDayCalendar .tableContainer .body .weekend:hover,
+.chooseMY .month:hover,
+.chooseMY .year:hover{background-color:#B7D0E7;}
+.listDayCalendar .tableContainer .footer{text-align:center;}
+.listDayCalendar .tableContainer .footer .btnToday,
+.chooseMY .btn{background-image:url(../Images/BgBtn.gif);background-position:0 0;border:solid 1px #7D9AB6;display:block;margin:5px auto;width:70px;height:15px;cursor:pointer;padding:3px;font-weight:bold;color:Black;text-decoration:none;}
+.listDayCalendar .tableContainer .footer .btnToday:hover,
+.chooseMY .btn:hover{background-position:0 -21px;border:solid 1px #5794BF;}
+

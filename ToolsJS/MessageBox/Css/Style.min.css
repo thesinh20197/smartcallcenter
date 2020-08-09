@@ -1,0 +1,18 @@
+body .ModalPopupChild{border:1px solid #a0a0a0;color:#000000;max-width:1200px;min-width:200px;font-family:Tahoma, Arial, sans-serif;font-size:12px;}
+.messageBoxBTD{background-position:16px 16px;background-repeat:no-repeat;padding:10px;}
+.messageBoxBTD .cText{text-align:left;}
+.messageBoxBTD .cBtn{padding:10px 0 0 0;text-align:center;}
+.messageBoxBTD .cBtn input{margin-right:3px;}
+.informationBTD{background-image:url("../Images/Info.png");}
+.warningBTD{background-image:url("../Images/Warning.png");}
+.errorBTD{background-image:url("../Images/Help.png");}
+.questionBTD{background-image:url("../Images/Help.png");}
+.informationBTD .cText,
+.warningBTD .cText,
+.errorBTD .cText,
+.questionBTD .cText{padding:5px 0 5px 45px;}
+.informationBTD .cBtn,
+.warningBTD .cBtn,
+.errorBTD .cBtn,
+.questionBTD .cBtn{padding-left:15px;text-align:center;}
+

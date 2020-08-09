@@ -1,0 +1,18 @@
+.containerMSB{border:1px solid #7F9DB9;width:170px;height:19px;background-color:White;text-align:left;clear:left;padding:0px;margin:0px;position:relative;}
+.containerMSB .displayText{border:1px solid #FFF;width:99%;height:17px;font-size:12px;font-family:Tahoma, Arial, sans-serif;float:left;padding:0px;margin:0px;}
+.containerMSB .btn{background-image:url('../Images/Btn.gif');background-position:0 0;background-repeat:no-repeat;width:17px;height:19px;position:absolute;right:-1px;top:0px;border-right:1px solid #7F9DB9;}
+.containerMSB .btn_over{background-image:url('../Images/Btn.gif');background-position:0 -19px;background-repeat:no-repeat;width:17px;height:19px;position:absolute;right:-1px;top:0px;border-right:1px solid #7F9DB9;}
+.listMSB{position:absolute;top:-1000px;left:-1000px;width:170px;background-color:#FFF;text-align:left;z-index:111000;-webkit-box-shadow:2px 2px 2px #A0A0A0;-moz-box-shadow:2px 2px 2px #A0A0A0;box-shadow:2px 2px 2px #A0A0A0;}
+.listMSB .cButtonOK{padding:3px;text-align:center;}
+.listMSB .containerSearch{padding:3px;border-top:1px solid #CCC;border-left:1px solid #CCC;}
+.listMSB .containerSearch .searchInput{border:1px solid #7F9DB9;width:99%;height:17px;font-size:12px;font-family:Tahoma, Arial, sans-serif;}
+.listMSB .cTableMSB{width:170px;background-color:#FFF;overflow:auto;}
+.listMSB .tableInList{border-collapse:collapse;border-width:1px;text-align:left;border-style:solid;width:100%;}
+.listMSB .tableInList td{border-width:1px !important;border-style:solid;border-color:#CCCCCC;border-collapse:collapse;font-family:Tahoma, Arial, sans-serif;font-size:12px;cursor:default;white-space:nowrap;padding:2px;}
+.listMSB .tableInList .item td{color:Black;background-color:#FFF;}
+.listMSB .tableInList .item_over td{color:#FFF;background-color:#91AFE3;}
+.listMSB .tableInList .item_selected td{color:#FFF;background-color:#3169C6;}
+.listMSB .tableInList .item_selected td div,
+.listMSB .tableInList .item_over td div,
+.listMSB .tableInList .item td div{max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
