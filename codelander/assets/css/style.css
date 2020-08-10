@@ -420,6 +420,10 @@ button:focus {
     flex-wrap: wrap
 }
 
+.services-header-img-section {
+    text-align: center;
+}
+
 .services-header-img-section img {
     width: 60%;
 }
@@ -491,17 +495,27 @@ button:focus {
 }
 
 @media screen and (max-width:991.98px) {
-    .services-section .services-container {
+    /* .services-section .services-container {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        text-align: center
-    }
+        text-align: center;
+    } */
     .services-container img {
         margin-bottom: 25px
     }
     .services-title-section {
         text-align: center
+    }
+    /* .services-sales-section .services-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+    .services-container .resp-location {
+        flex-direction: column-reverse;
     }
 }
 
@@ -515,7 +529,7 @@ button:focus {
 
 .pricing-section-left-bg-graphics {
     position: absolute;
-    top: -15%;
+    top: 0%;
     right: -10%;
     z-index: -1
 }
@@ -1397,6 +1411,12 @@ button:focus {
     }
 }
 
+@media all and (min-width: 768px) {
+    .pricing-card-section {
+        max-width: 90%;
+    }
+}
+
 .pfl-wrap {
     padding: 50px 0 100px;
     padding-bottom: 30px;
@@ -1763,9 +1783,16 @@ input[type=submit]:hover {
         width: 100% !important;
         margin-top: 0;
     }
+    .pricing-rate, .pricing-rate1 {
+        font-size: 40px;
+    }
 }
 
 .scc {
     color: var(--hover-color);
     font-weight: bold;
+}
+
+.bg-experience {
+    max-width: 100%;
 }
