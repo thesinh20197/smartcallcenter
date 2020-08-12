@@ -418,13 +418,13 @@ button:focus {
 }
 
 .services-section-bg-graphics img {
-    width: 100%
+    width: 100%;
 }
 
 .services-container {
     position: relative;
     display: flex;
-    padding-top: 55px;
+    padding-top: 20px;
     padding-bottom: 55px;
     flex-wrap: wrap
 }
