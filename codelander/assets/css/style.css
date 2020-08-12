@@ -1763,7 +1763,7 @@ input[type=submit] {
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    float: right;
+    /* float: right; */
     font-weight: bold;
 }
 
