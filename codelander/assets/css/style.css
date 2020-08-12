@@ -160,11 +160,12 @@ button:focus {
     background-color: var(--hover-color);
     font-size: 15px;
     font-family: Montserrat;
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-weight: bold;
     color: #fff;
     padding: 12px 40px!important;
     border-radius: 100px;
-    width: 185px;
+    width: 170px;
 }
 
 .learn-more-btn:hover {
