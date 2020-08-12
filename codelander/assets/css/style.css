@@ -158,7 +158,7 @@ button:focus {
 
 .learn-more-btn {
     background-color: var(--hover-color);
-    font-size: 18px;
+    font-size: 15px;
     font-family: Montserrat;
     font-weight: 600;
     color: #fff;
