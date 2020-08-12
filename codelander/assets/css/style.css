@@ -222,7 +222,7 @@ button:focus {
         padding: 10px 0
     }
     .header-scrolled {
-        height: inherit
+        height: inherit;
     }
 }
 
@@ -528,6 +528,10 @@ button:focus {
     }
     .security-code img {
         margin-bottom: 0;
+    }
+    #map iframe {
+        width: 600px;
+        height: 250px;
     }
 }
 
