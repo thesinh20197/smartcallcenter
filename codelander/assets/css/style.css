@@ -34,6 +34,15 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 500
 }
 
+a, a:hover {
+    text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus, select:focus {
+    outline: none;
+    border: 1px solid var(--blue-color)!important;
+}
+
 .padding-0 {
     padding: 0!important
 }
@@ -148,7 +157,7 @@ button:focus {
 }
 
 .learn-more-btn {
-    background-color: #3a88ec;
+    background-color: var(--hover-color);
     font-size: 18px;
     font-family: Montserrat;
     font-weight: 600;
@@ -160,11 +169,11 @@ button:focus {
 
 .learn-more-btn:hover {
     color: #fff;
-    background-color: var(--hover-color);
+    background-color: var(--blue-color);
 }
 
 .learn-more-btn1 {
-    background-color: #3a88ec;
+    background-color: var(--hover-color);
     font-size: 18px;
     font-family: Montserrat;
     font-weight: 600;
@@ -177,7 +186,7 @@ button:focus {
 
 .learn-more-btn1:hover {
     color: #fff;
-    background-color: var(--hover-color);
+    background-color: var(--blue-color);
 }
 
 .btn-invert {
@@ -425,7 +434,7 @@ button:focus {
 }
 
 .services-header-img-section img {
-    width: 60%;
+    width: 80%;
 }
 
 .services-title-section {
@@ -516,6 +525,9 @@ button:focus {
     } */
     .services-container .resp-location {
         flex-direction: column-reverse;
+    }
+    .security-code img {
+        margin-bottom: 0;
     }
 }
 
@@ -724,6 +736,14 @@ button:focus {
     padding-left: 35px
 } */
 
+.no-function li:nth-child(5), .no-function li:nth-child(6), .no-function li:nth-child(7) {
+    background: url(../../../codelander/assets/images/pricing-section-false.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 35px;
+}
+
 @media screen and (max-width:991.98px) {
     .pricing-plan-cards-section {
         flex-direction: column;
@@ -791,7 +811,7 @@ button:focus {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #3a88ec!important
+    background-color: var(--hover-color)!important
 }
 
 .owl-nav button {
@@ -836,6 +856,7 @@ button:focus {
     font-size: 70px;
     position: relative;
     top: -5px;
+    color: var(--hover-color);
 }
 
 .owl-nav button:focus {
@@ -1722,7 +1743,7 @@ button:focus {
     clear: both;
 } */
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -1795,4 +1816,68 @@ input[type=submit]:hover {
 
 .bg-experience {
     max-width: 100%;
+}
+
+#thank-get-in-touch {
+    color: red;
+    text-align: center;
+}
+
+#thank-get-in-touch span {
+    color: white;
+}
+
+.bgHomeCenter {
+    height: 570px;
+    width: 100%;
+    margin: 40px 0;
+    background-image: url(../images/BgHome.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/*-------------------------formTestCall---------------------------*/
+
+.formTestCall {
+    width: 150px;
+    font-size: 15px;
+    margin: auto;
+    padding-top: 294px;
+    padding-right: 0px;
+}
+
+.formTestCall .row {
+    padding: 5px;
+}
+
+.formTestCall input {
+    border: 1px solid #ccc;
+    /* border-bottom: 1px solid #c3c3c3 !important; */
+}
+
+.formTestCall .btnTest {
+    padding: 7px 30px;
+    color: white;
+    text-align: center;
+    background-color: var(--hover-color);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    display: block;
+}
+
+.formTestCall .btnTest:hover {
+    background-color: var(--blue-color);
+}
+
+.formTestCall .input-demo {
+    padding: 6px 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    display: block;
+}
+
+.formTestCall .security-code img {
+    background-color: #ffbf00;
 }

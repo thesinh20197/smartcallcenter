@@ -61,7 +61,7 @@
 	<script>
 		$("#navbarNav").on("click", "a", function () {
 			$(".navbar-toggle").click();
-			//or $("#nav").slideToggle();
+
 		});
 	</script>
 </head>
@@ -122,32 +122,32 @@
 				<ul class="navbar-nav menu-navbar-nav">
 					<li class="nav-item">
 						<a class="nav-link" href="#top">
-							<!-- <p class="nav-link-number">01</p> -->
+
 							<p class="nav-link-menu">Trang chủ</p>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#introduce">
-							<!-- <p class="nav-link-number">02</p> -->
+
 							<p class="nav-link-menu">Giới thiệu</p>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#pricing">
-							<!-- <p class="nav-link-number">03</p> -->
+
 							<p class="nav-link-menu">Sản phẩm</p>
 						</a>
 					</li>
 
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">
-							<!-- <p class="nav-link-number">05</p> -->
+
 							<p class="nav-link-menu">Liên hệ</p>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link">
-							<!-- <p class="nav-link-number">06</p> -->
+
 							<p class="nav-link-menu">Hotline : <span class="hotline-text">1900 966 948 </span></p>
 						</a>
 					</li>
@@ -166,20 +166,7 @@
 	<div class="wrapper">
 		<div class="header">
 			<img src="codelander/assets/images/BgHeadLarge.jpg" style="width:100%; height:auto">
-			<!-- <div class="container header-container">
-				<div class="col-lg-6 header-img-section">
-					<img src="codelander/assets/images/header.png">
-				</div>
-				<div class="col-lg-5 offset-lg-1 header-title-section">
-					<p class="header-subtitle">Multipurpose landing template</p>
-					<h1 class="header-title">Beautifully simple, code.</h1>
-					<p class="header-title-text">Codelander is a beautifully simple, clean and lightweight landing page
-						template for all types of businesses, with bold and bright colours.</p>
-					<div class="learn-more-btn-section">
-						<a class="nav-link learn-more-btn btn-invert" href="#services">Learn More</a>
-					</div>
-				</div>
-			</div> -->
+
 		</div>
 		<div id="introduce"></div>
 		<div class="strategy-section">
@@ -204,7 +191,8 @@
 							<img src="codelander/assets/images/cutthecost.png">
 						</div>
 						<h2>Chi phí hợp lý</h2>
-						<p>Hệ thống của chúng tôi giúp bạn tiết giảm chi phí rất nhiều cho việc marketing sản phẩm, cước
+						<p>Giá rẻ, phù hợp với các doanh nghiệp vừa và nhỏ. Hệ thống của chúng tôi giúp bạn tiết giảm
+							chi phí rất nhiều cho việc marketing sản phẩm, cước
 							viễn thông telesale, thuê nhân sự
 							mới,...</p>
 					</div>
@@ -217,7 +205,7 @@
 						<h2>Năng suất cao</h2>
 						<p>Mỗi ngày hệ thống sẽ tiếp cận đến 5000 - 10000 khách hàng để truyền tải nội dung sản phẩm.
 							Công việc của bạn là chỉ tiếp nhận lượng khách hàng quan tâm sản phẩm mỗi ngày để tư vấn và
-							chăm sóc.</p>
+							chăm sóc. Năng suất vận hành cao và hơn thế nữa với nhu cầu của bạn...</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-xs-8 offset-xs-2 strategy-card-section">
@@ -243,7 +231,7 @@
 			</div>
 			<div class="container services-container">
 				<div class="col-lg-5 services-title-section resp-location">
-					<!-- <p class="services-subtitle">Our services</p> -->
+
 					<div>
 						<h2 class="services-title">Trải nghiệm ngay</h2>
 						<p class="services-text"><span class="scc">Smart Call Center</span> tiên phong trong lĩnh vực
@@ -251,32 +239,38 @@
 							cấp giải pháp thay đổi
 							cách thức mà doanh nghiệp giao tiếp với khách hàng.</p>
 					</div>
-					<!-- <div class="services-accordion">
-						<button class="accordion">
-							Website Design
-						</button>
-						<div class="panel">
-							<p>
-								Some information on your web design and development services can go here. A few lines
-								should do the trick.
-							</p>
-						</div>
-						<button class="accordion">
-							Application Development
-						</button>
-						<div class="panel">
-							<p>
-								More information on your application development services can go here, too. There's
-								plenty of space available for you.
-							</p>
-						</div>
-					</div> -->
+
 					<div class="col-lg-6 services-header-img-section bg-experience padding-0">
 						<img src="codelander/assets/images/services-header.png">
 					</div>
 				</div>
-				<div class="col-lg-6 offset-lg-1 services-header-img-section">
-					<img src="codelander/assets/images/PhoneHome.jpg">
+				<div class="col-lg-6 offset-lg-1 services-header-img-section ">
+					<!-- <img src="codelander/assets/images/PhoneHome.jpg"> -->
+					<div data-wow-delay="0.2s" class="bgHomeCenter wow fadeInDown animated">
+						<div class="formTestCall">
+							<div class="row">
+								<input type="text" id="tbxHoTen" placeholder="Họ tên" class="input-demo" />
+							</div>
+							<div class="row">
+								<input type="text" id="tbxSoDienThoai" placeholder="Số điện thoại" class="input-demo" />
+							</div>
+							<div class="row security-code" style="justify-content: center;">
+								<img src="ImageWordVerification.ashx_-1641742469.jpg" id="imgTestCallWV"
+									alt="Mã bảo mật" />
+							</div>
+							<div class="row">
+								<input type="text" id="tbxMaBaoMat" placeholder="Mã bảo mật" class="input-demo" />
+							</div>
+							<div class="row" style="justify-content: center;">
+								<a href="javascript:;" id="btnTestAutoCall" class="btnTest">Bắt đầu demo</a>
+							</div>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function () {
+								TestAutoCall.init();
+							});
+						</script>
+					</div>
 
 				</div>
 			</div>
@@ -317,28 +311,13 @@
 				</div>
 
 				<div class="pricing-plan-cards-section">
-					<!-- <div class="col-lg-4 col-md-8 col-xs-10 pricing-card-section">
-						<div class="pricing-card">
-							<p class="pricing-rate">$199</p>
-							<p class="pricing-period">Basic</p>
-							<p class="pricing-text">Starter plan with all the basics included</p>
-							<div class="pricing-all-plan-features-section basic-plan-features-section">
-								<ul>
-									<li>Core Business System</li>
-									<li>Team Management</li>
-									<li>Dual Infrastructure</li>
-									<li>Customized Features</li>
-								</ul>
-							</div>
-							<a class="nav-link learn-more-btn" href="#contact">Enquire</a>
-						</div>
-					</div> -->
+
 					<div class="col-lg-6 col-md-6 col-xs-6 pricing-card-section">
 						<div class="pricing-card featured">
 							<p class="pricing-rate">2.500.000</p>
 							<p class="pricing-period">VNĐ</p>
 							<p class="pricing-text">Lựa chọn hợp lý cho cá nhân 1-2 người sử dụng</p>
-							<div class="pricing-all-plan-features-section medium-plan-features-section">
+							<div class="pricing-all-plan-features-section medium-plan-features-section no-function">
 								<ul>
 									<li>Robocalls - Kịch bản chuyển máy tự động</li>
 									<li>Auto Connect - Nâng cao năng suất Telesales gấp 10 lần</li>
@@ -347,6 +326,7 @@
 									<li>Báo cáo chuyên cần - Tính năng đột phá cho quản trị viên</li>
 									<li>Phân Tour Hotline tự động động hoàn toàn</li>
 									<li>Quản trị lịch sử cuộc gọi - Ghi âm cuộc gọi 100%</li>
+									<li>Thống kê thông minh - Nhắc việc thông minh</li>
 									<li>Server riêng</li>
 
 								</ul>
@@ -368,83 +348,20 @@
 									<li>Báo cáo chuyên cần - Tính năng đột phá cho quản trị viên</li>
 									<li>Phân Tour Hotline tự động động hoàn toàn</li>
 									<li>Quản trị lịch sử cuộc gọi - Ghi âm cuộc gọi 100%</li>
+									<li>Thống kê thông minh - Nhắc việc thông minh</li>
 									<li>Server riêng</li>
 								</ul>
 							</div>
 							<a class="nav-link learn-more-btn1" href="#contact">Sử dụng ngay</a>
 						</div>
 					</div>
-					<!-- <div class="col-lg-4 col-md-8 col-xs-10 pricing-card-section">
-						<div class="pricing-card">
-							<p class="pricing-rate">$1299</p>
-							<p class="pricing-period">Corporate</p>
-							<p class="pricing-text">Everything a global company needs</p>
-							<div class="pricing-all-plan-features-section advance-plan-features-section">
-								<ul>
-									<li>Core Business System</li>
-									<li>Team Management</li>
-									<li>Dual Infrastructure</li>
-									<li>Customized Features</li>
-								</ul>
-							</div>
-							<a class="nav-link learn-more-btn" href="#contact">Enquire</a>
-						</div>
-					</div> -->
+
 				</div>
 			</div>
 		</div>
 
 
-		<!-- <div id="news"></div>
 
-		<div class="blog-section">
-			<div class="blog-section-right-bg">
-				<img src="codelander/assets/images/blog-section-right-bg.png">
-			</div>
-			<div class="blog-section-left-bg">
-				<img src="codelander/assets/images/blog-section-left-bg.png">
-			</div>
-			<div class="container blog-container">
-				<div class="blog-title-section">
-					<p class="blog-subtitle">Recent updates</p>
-					<h2 class="blog-title">Featured Stories</h2>
-				</div>
-				<div class="blog-posts-section">
-					<div class="col-lg-4 col-md-8 col-xs-10 blog-post-card-container">
-						<div class="blog-post-card">
-							<div class="blog-post-icon">
-								<img src="codelander/assets/images/blog-card-1.png">
-							</div>
-							<h3 class="blog-post-title">Remote Working</h3>
-							<p class="blog-post-text">Making it easier to connect with every client worldwide</p>
-							<a class="blog-post-link" href="#news">Read More</a>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-8 col-xs-10 blog-post-card-container">
-						<div class="blog-post-card">
-							<div class="blog-post-icon mb-4">
-								<img src="codelander/assets/images/blog-card-2.png">
-							</div>
-							<h3 class="blog-post-title">Google Rankings</h3>
-							<h4 class="blog-post-subtitle">Keywords</h4>
-							<p class="blog-post-text mb-4">We've ranked number one on Google for multiple keywords. Read
-								about our SEO strategies</p>
-							<a class="nav-link learn-more-btn" href="#news">Read More</a>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-8 col-xs-10 blog-post-card-container">
-						<div class="blog-post-card">
-							<div class="blog-post-icon">
-								<img src="codelander/assets/images/blog-card-3.png">
-							</div>
-							<h3 class="blog-post-title">Communication</h3>
-							<p class="blog-post-text">We've made our client support services easy to access</p>
-							<a class="blog-post-link" href="#news">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 		<div id="contact"></div>
 
@@ -454,109 +371,89 @@
 
 					<h2 class="contact-title">Liên hệ ngay</h2>
 					<p class="contact-subtitle">Chúng tôi sẽ liên hệ với quý khách ngay khi nhận được thư. Chúng tôi rất
-						sẵn lòng giúp trả lời bất kỳ câu hỏi nào của bạn, hãy liên hệ
+						sẵn lòng trả lời bất kỳ câu hỏi nào của bạn, hãy liên hệ
 						với chúng tôi! </p>
 
-					<!-- <div class="contact-form">
-						<form id="contactForm" name="contactForm">
-							<div class="form">
-								<div class="input">
-									<input name="tbxFullName" type="text" id="tbxFullName" class="name"
-										placeholder="Tên hoặc lãnh vực kinh doanh của bạn" />
-								</div>
-							</div>
-							<div class="form">
-								<div class="input">
-									<input name="tbxPhone" type="text" id="tbxPhone" class="name"
-										placeholder="Số điện thoại" />
-								</div>
-							</div>
-							<div class="form">
-								<div class="input">
-									<input name="tbxEmail" type="text" id="tbxEmail" class="name" placeholder="Email" />
-								</div>
-							</div>
-							<div class="form" style="display:none">
-								<label style="color: Black; font-weight: bold;">Vấn đề: <span
-										style="color:red">*</span></label>
-								<div class="input">
-									<input name="tbxTitle" type="text" id="tbxTitle" class="name" />
-								</div>
-							</div>
-							<div class="form">
-								<div class="input">
-									<textarea name="tbxContent" rows="2" cols="20" id="tbxContent"
-										placeholder="Gói dịch vụ bạn muốn sử dụng"></textarea>
-								</div>
-							</div>
-							<div class="form2">
-								<input style="background-color: aqua;padding:10px 50px" type="submit" name="btnSubmit"
-									value="Gửi" id="btnSubmit" />
-							</div>
 
+					<div class="container contact-form contact-item">
+						<form method="POST" class="gform pure-form pure-form-stacked" data-email="thesinh.scc@gmail.com"
+							action="https://script.google.com/macros/s/AKfycbz0rcemuL-D23Z17KmZ9gbJi4CbddFlUP4ywOLh/exec">
+							<div class="messages"></div>
+							<div class="controls form-elements">
+								<div class="row">
+									<div class="col-25">
+										<label for="name">Tên</label>
+									</div>
+									<div class="col-75">
+										<input type="text" id="name" name="name" required="required"
+											data-error="Mời bạn nhập tên..." placeholder="Tên của bạn là gì...">
+										<div class="help-block with-errors "></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-25">
+										<label for="phone">Số điện thoại</label>
+									</div>
+									<div class="col-75">
+										<input name="phone" type="text" id="phone" required="required"
+											data-error="Mời bạn nhập số điện thoại..."
+											placeholder="Số điện thoại liên lạc của bạn là gì...">
+										<div class="help-block with-errors "></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-25">
+										<label for="email">Email</label>
+									</div>
+									<div class="col-75">
+										<input name="email" type="email" id="email"
+											placeholder="Email liên hệ của bạn là gì...">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-25">
+										<label for="field">Lĩnh vực</label>
+									</div>
+									<div class="col-75">
+										<select id="field" name="field">
+											<option value="Bất động sản">Bất động sản</option>
+											<option value="Chứng khoán">Chứng khoán</option>
+											<option value="Tư vấn tài chính">Tư vấn tài chính</option>
+											<option value="Giáo dục">Giáo dục</option>
+											<option value="Thẩm mỹ viện">Thẩm mỹ viện</option>
+											<option value="Nha khoa">Nha khoa</option>
+											<option value="Spa">Spa</option>
+
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-25">
+										<label for="subject">Ghi chú</label>
+									</div>
+									<div class="col-75">
+										<textarea id="subject" name="subject"
+											placeholder="Gói dịch vụ mà bạn mong muốn là gì..."
+											style="height:200px"></textarea>
+									</div>
+								</div>
+								<div class="row" style="display: block;">
+									<input type="submit" class="button" value="Gửi">
+								</div>
+								<div class="clear-fix "></div>
+							</div>
+							<div class="thankyou_message" style="display: none;">
+								<h2 id="thank-get-in-touch">
+									<em><strong>Thanks for contacting me! I will get back to you soon!
+											<span> - The Sinh</span>
+										</strong></em>
+								</h2>
+							</div>
 						</form>
 
-					</div> -->
-					<div class="container contact-form">
-						<form action="" id="contactForm" name="contactForm">
-							<div class="row">
-								<div class="col-25">
-									<label for="fname">Tên</label>
-								</div>
-								<div class="col-75">
-									<input type="text" id="tbxFullName" name="tbxFullName" class="name"
-										placeholder="Tên của bạn là gì...">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-25">
-									<label for="lname">Số điện thoại</label>
-								</div>
-								<div class="col-75">
-									<input name="tbxPhone" type="text" id="tbxPhone" class="name"
-										placeholder="Số điện thoại liên lạc của bạn là gì...">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-25">
-									<label for="lname">Email</label>
-								</div>
-								<div class="col-75">
-									<input name="tbxEmail" type="text" id="tbxEmail" class="name"
-										placeholder="Email liên hệ của bạn là gì...">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-25">
-									<label for="field">Lĩnh vực</label>
-								</div>
-								<div class="col-75">
-									<select id="field" name="field">
-										<option value="realEstate">Bất động sản</option>
-										<option value="stock">Chứng khoán</option>
-										<option value="finance">Tư vấn tài chính</option>
-										<option value="education">Giáo dục</option>
-										<option value="beautySalon">Thẩm mỹ viện</option>
-										<option value="dentistry">Nha khoa</option>
-										<option value="spa">Spa</option>
 
-									</select>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-25">
-									<label for="subject">Ghi chú</label>
-								</div>
-								<div class="col-75">
-									<textarea id="subject" name="subject"
-										placeholder="Gói dịch vụ mà bạn mong muốn là gì..."
-										style="height:200px"></textarea>
-								</div>
-							</div>
-							<div class="row" style="display: block; margin-top: 10px;">
-								<input type="submit" id="btnSubmit" name="btnSubmit" value="Gửi">
-							</div>
-						</form>
+
+
 					</div>
 
 				</div>
@@ -660,12 +557,15 @@
 		</div>
 	</div>
 
-	<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<!-- <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="codelander/assets/js/owl/owl.carousel.js"></script>
 	<script src="codelander/assets/js/accordian.js"></script>
+	<script data-cfasync="false" type="text/javascript"
+		src="./codelander/assets/js/email-submission-handler.js"></script>
+
 
 	<script type="text/javascript">
 		$(window).scroll(function () {
@@ -795,6 +695,7 @@
 	<div id="divLoaderAjax" style="display:none">
 		<img id="LoaderControl1_Image2" src="Images/AjaxLoader.gif" align="middle" />
 	</div>
+
 
 </body>
 
