@@ -1706,6 +1706,11 @@ input[type=submit]:hover {
     color: var(--hover-color);
 }
 
+.nav-menu li:last-child.active a {
+    border-bottom: none;
+    color: var(--white-color)!important;
+}
+
 .last-item .nav-link {
     color: var(--white-color)!important;
 }
