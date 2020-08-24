@@ -177,6 +177,17 @@
         border-bottom: 2px solid var(--hover-color);
         color: var(--hover-color)!important;
     }
+    #widget-contact {
+        right: 10px;
+        bottom: 85px;
+    }
+    #widget-contact a {
+        width: 42px;
+        height: 42px;
+    }
+    #back-to-top {
+        right: 9px;
+    }
 }
 
 @media screen and (max-width:799.98px) {
@@ -219,12 +230,6 @@
         top: 2px;
         right: 1px;
         border-radius: 0;
-    }
-}
-
-@media all and (min-width: 768px) {
-    .pricing-card-section {
-        max-width: 90%;
     }
 }
 
@@ -276,6 +281,11 @@
     .nav-menu li.active a {
         border-bottom: 2px solid var(--hover-color);
         color: var(--hover-color)!important;
+    }
+    .callback-popup .modal-header .close {
+        top: 2px;
+        right: 1px;
+        border-radius: 0;
     }
 }
 

@@ -181,10 +181,11 @@ button:focus {
     font-family: Montserrat;
     font-weight: 600;
     color: #fff;
-    padding: 12px 40px!important;
+    padding: 18px 25px!important;
     border-radius: 100px;
     /* width: 160px; */
     width: 215px;
+    text-align: center;
 }
 
 .learn-more-btn1:hover {
@@ -1134,7 +1135,7 @@ button:focus {
     position: fixed;
     bottom: 20px;
     right: 15px;
-    background-color: var(--blue-color);
+    background-color: var(--hover-color);
     font-size: 24px;
     text-align: center;
     padding-top: 6px;
@@ -1150,9 +1151,9 @@ button:focus {
 }
 
 #back-to-top:hover {
-    background: var(--hover-color);
+    background: var(--blue-color);
     color: #fff;
-    border: 1px solid var(--hover-color);
+    border: 1px solid var(--blue-color);
 }
 
 /* Socaial CSS - Start */
