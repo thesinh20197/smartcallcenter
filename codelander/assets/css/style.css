@@ -129,7 +129,7 @@ button:focus {
 }
 
 .nav-item .nav-link {
-    text-align: right;
+    /* text-align: right; */
 }
 
 .nav-item .nav-link:hover {
@@ -151,7 +151,8 @@ button:focus {
 
 .nav-link {
     font-family: Montserrat;
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-weight: bold;
     font-size: 18px;
     color: var(--white-color);
     line-height: 1
