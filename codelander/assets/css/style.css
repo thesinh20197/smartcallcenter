@@ -38,9 +38,14 @@ a, a:hover {
     text-decoration: none;
 }
 
-button:focus, input:focus, textarea:focus, select:focus {
+input:focus, textarea:focus, select:focus {
     outline: none;
     border: 1px solid var(--blue-color)!important;
+    box-shadow: 0 0 5px var(--blue-color);
+}
+
+button:focus {
+    outline: none;
 }
 
 .padding-0 {
@@ -115,7 +120,7 @@ button:focus {
 
 .nav-item {
     margin-left: 15px;
-    margin-right: 15px
+    margin-right: 15px;
 }
 
 .navbar-nav:not(.menu-navbar-nav) .nav-item:last-of-type {
@@ -124,18 +129,14 @@ button:focus {
 }
 
 .nav-item .nav-link {
-    text-align: right
+    text-align: right;
 }
 
-.nav-item .nav-link:hover .nav-link-number {
+.nav-item .nav-link:hover {
     color: var(--hover-color)!important;
 }
 
-.nav-item .nav-link:hover .nav-link-menu {
-    color: var(--hover-color)!important;
-}
-
-.nav-item:last-child .nav-link:hover .nav-link-menu {
+.nav-menu .navbar-nav .nav-item:last-child .nav-link:hover {
     color: var(--white-color)!important;
 }
 
@@ -148,7 +149,7 @@ button:focus {
     line-height: 1
 }
 
-.nav-link-menu {
+.nav-link {
     font-family: Montserrat;
     font-weight: 600;
     font-size: 18px;
@@ -163,7 +164,7 @@ button:focus {
     /* font-weight: 600; */
     font-weight: bold;
     color: #fff;
-    padding: 12px 40px!important;
+    padding: 15px 40px!important;
     border-radius: 100px;
     width: 170px;
 }
@@ -210,31 +211,6 @@ button:focus {
 .hotline-text {
     color: var(--hover-color);
     font-weight: bold;
-}
-
-@media screen and (max-width:991.98px) {
-    .navbar {
-        background-color: #fff;
-        -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
-        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05)
-    }
-    .navbar-brand img {
-        width: 80px!important;
-        padding: 10px 0
-    }
-    .header-scrolled {
-        height: inherit;
-    }
-}
-
-@media screen and (max-width:575.98px) {
-    .navbar {
-        padding-top: 0;
-        padding-bottom: 0
-    }
-    .menu-navbar-nav {
-        padding-bottom: 10px
-    }
 }
 
 .header {
@@ -288,59 +264,9 @@ button:focus {
     margin-top: 20px
 }
 
-@media screen and (max-width:991.98px) {
-    .header-container {
-        flex-direction: column
-    }
-    .header-title-section {
-        text-align: center;
-        margin-top: 40px
-    }
-    .navbar-collapse {
-        background-color: #fff;
-        color: var(--navbar-header);
-        padding-bottom: 20px;
-        padding-top: 20px;
-        margin-bottom: 20px
-    }
-    .nav-item:last-child .nav-link:hover .nav-link-menu {
-        color: var(--navbar-header)!important;
-    }
-    .navbar-collapse .nav-link-menu {
-        color: #505050
-    }
-    .nav-link-number {
-        color: #fff;
-        display: none
-    }
-    .nav-link-menu {
-        color: #fff;
-    }
-    .learn-more-btn-section {
-        justify-content: center
-    }
-}
-
-@media screen and (max-width:799.98px) {
-    .header {
-        height: auto;
-        padding-top: 20%
-    }
-}
-
-@media screen and (max-width:499.98px) {
-    .header {
-        padding-top: 30%
-    }
-    .header-subtitle {
-        font-size: 24px
-    }
-    .header-title {
-        font-size: 46px
-    }
-    .header-title-text {
-        font-size: 18px
-    }
+.active {
+    color: #ff6e00 !important;
+    font-weight: bold;
 }
 
 .strategy-section {
@@ -399,12 +325,6 @@ button:focus {
     font-family: Montserrat;
     font-weight: 300;
     max-width: 300px
-}
-
-@media screen and (max-width:576.98px) {
-    .strategy-container {
-        flex-direction: column
-    }
 }
 
 .services-section {
@@ -502,38 +422,6 @@ button:focus {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5
-}
-
-@media screen and (max-width:991.98px) {
-    /* .services-section .services-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    } */
-    .services-container img {
-        margin-bottom: 25px
-    }
-    .services-title-section {
-        text-align: center
-    }
-    /* .services-sales-section .services-container {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    } */
-    .services-container .resp-location {
-        flex-direction: column-reverse;
-    }
-    .security-code img {
-        margin-bottom: 0;
-    }
-    #map iframe {
-        width: 600px;
-        height: 250px;
-    }
 }
 
 .pricing-section {
@@ -747,17 +635,6 @@ button:focus {
     background-repeat: no-repeat;
     background-position: 5px 5px;
     padding-left: 35px;
-}
-
-@media screen and (max-width:991.98px) {
-    .pricing-plan-cards-section {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-    }
-    .pricing-title p {
-        max-width: 428px
-    }
 }
 
 .clients-section {
@@ -995,12 +872,6 @@ button:focus {
     text-decoration: none
 }
 
-@media screen and (max-width:991.98px) {
-    .blog-posts-section {
-        flex-direction: column
-    }
-}
-
 .contact-section {
     padding-top: 55px;
     padding-bottom: 90px
@@ -1051,18 +922,6 @@ button:focus {
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 20px
-}
-
-@media screen and (max-width:991.98px) {
-    .contact-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center
-    }
-    .contact-title-section {
-        text-align: center
-    }
 }
 
 .footer-section {
@@ -1266,21 +1125,6 @@ button:focus {
     color: var(--hover-color);
 }
 
-@media screen and (max-width:991.98px) {
-    .footer-container {
-        flex-wrap: wrap
-    }
-    .footer-logo {
-        padding-left: 40px
-    }
-    .footer-form {
-        padding-right: 40px!important
-    }
-    .footer-subsection-form-input {
-        width: 85%
-    }
-}
-
 #back-to-top {
     width: 40px;
     height: 40px;
@@ -1420,27 +1264,6 @@ button:focus {
 
 .lazi-alo-timer:focus, .lazi-alo-number:focus {
     outline: none;
-}
-
-@media all and (max-width: 480px) {
-    .callback-popup .modal-body {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-@media all and (max-width: 768px) {
-    .callback-popup .modal-header .close {
-        top: 2px;
-        right: 1px;
-        border-radius: 0;
-    }
-}
-
-@media all and (min-width: 768px) {
-    .pricing-card-section {
-        max-width: 90%;
-    }
 }
 
 .pfl-wrap {
@@ -1802,18 +1625,6 @@ input[type=submit]:hover {
     clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100% !important;
-        margin-top: 0;
-    }
-    .pricing-rate, .pricing-rate1 {
-        font-size: 40px;
-    }
-}
-
 .scc {
     color: var(--hover-color);
     font-weight: bold;
@@ -1824,8 +1635,10 @@ input[type=submit]:hover {
 }
 
 #thank-get-in-touch {
-    color: red;
+    color: var(--hover-color);
     text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
 }
 
 #thank-get-in-touch span {
@@ -1885,4 +1698,161 @@ input[type=submit]:hover {
 
 .formTestCall .security-code img {
     background-color: #ffbf00;
+}
+
+.nav-menu li.active a {
+    border-bottom: 2px solid var(--hover-color);
+    color: var(--hover-color);
+}
+
+.last-item .nav-link {
+    color: var(--white-color)!important;
+}
+
+.last-item .nav-link:hover {
+    background-color: var(--blue-color)!important;
+}
+
+.hover-none {
+    pointer-events: none;
+}
+
+.spinner-master * {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.spinner-master {
+    position: relative;
+    margin: 50px auto;
+    height: 50px;
+    width: 50px;
+}
+
+.spinner-master input[type=checkbox] {
+    display: none;
+}
+
+.spinner-master label {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    left: 0;
+}
+
+.spinner-master .spinner {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+}
+
+.spinner-master .diagonal.part-1 {
+    position: relative;
+    float: right;
+}
+
+.spinner-master .horizontal {
+    position: relative;
+    float: right;
+    margin-top: 6px;
+}
+
+.spinner-master .diagonal.part-2 {
+    position: relative;
+    float: right;
+    margin-top: 6px;
+}
+
+.spinner-master input[type=checkbox]:checked~.spinner-spin>.horizontal {
+    opacity: 0;
+}
+
+.spinner-master input[type=checkbox]:checked~.spinner-spin>.diagonal.part-1 {
+    transform: rotate(405deg);
+    -webkit-transform: rotate(405deg);
+    margin-top: 10px;
+}
+
+.spinner-master input[type=checkbox]:checked~.spinner-spin>.diagonal.part-2 {
+    transform: rotate(-405deg);
+    -webkit-transform: rotate(-405deg);
+    margin-top: -16px;
+}
+
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navbar .nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.site-navbar .nav-menu ul li a:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+/* navbar regular css end */
+
+/* nav-toggler css start */
+
+.nav-toggler {
+    border: 3px solid var(--hover-color);
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+    position: fixed;
+    top: 45px;
+    right: 30px;
+}
+
+.nav-toggler span, .nav-toggler span:before, .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: var(--hover-color);
+    display: block;
+    transition: .3s;
+}
+
+.nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+    background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+/* nav-toggler css start */
+
+#navbar {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hide-item {
+    color: #fff!important;
 }

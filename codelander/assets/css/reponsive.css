@@ -1,0 +1,282 @@
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100% !important;
+        margin-top: 0;
+    }
+    .pricing-rate, .pricing-rate1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+    .menu-navbar-nav {
+        padding-bottom: 10px
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    .header-container {
+        flex-direction: column
+    }
+    .header-title-section {
+        text-align: center;
+        margin-top: 40px
+    }
+    .navbar-collapse {
+        background-color: #fff;
+        color: var(--navbar-header);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-bottom: 20px
+    }
+    .navbar-collapse .nav-link {
+        color: var(--navbar-header);
+    }
+    .nav-link-number {
+        color: #fff;
+        display: none
+    }
+    .menu-navbar-nav li:last-child {
+        color: var(--navbar-header);
+    }
+    .learn-more-btn-section {
+        justify-content: center
+    }
+    .navbar {
+        background-color: var(--navbar-header)!important;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05)
+    }
+    .navbar-brand img {
+        width: 80px!important;
+        padding: 10px 0
+    }
+    .header-scrolled {
+        height: inherit;
+    }
+    /* .services-section .services-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+    .pricing-plan-cards-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    .pricing-title p {
+        max-width: 428px
+    }
+    .services-container img {
+        margin-bottom: 25px
+    }
+    .services-title-section {
+        text-align: center
+    }
+    /* .services-sales-section .services-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+    .services-container .resp-location {
+        flex-direction: column-reverse;
+    }
+    .security-code img {
+        margin-bottom: 0;
+    }
+    #map iframe {
+        width: 600px;
+        height: 250px;
+    }
+    /* .header {
+        padding-top: 12%;
+    } */
+    .blog-posts-section {
+        flex-direction: column;
+    }
+    .contact-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+    .contact-title-section {
+        text-align: center
+    }
+    .footer-container {
+        flex-wrap: wrap
+    }
+    .footer-logo {
+        padding-left: 40px
+    }
+    .footer-form {
+        padding-right: 40px!important
+    }
+    .footer-subsection-form-input {
+        width: 85%
+    }
+    .hotline-alo-ph-circle {
+        display: none;
+    }
+    .hotline-alo-phone {
+        bottom: -70px;
+        left: -14px;
+    }
+    .nav-toggler {
+        display: block;
+    }
+    /* navbar css for mobile start */
+    .nav-toggler {
+        display: block;
+        top: 35px;
+        right: 20px;
+    }
+    .site-navbar {
+        min-height: 60px;
+    }
+    .site-navbar .nav-menu ul {
+        position: absolute;
+        width: 100%;
+        /* height: calc(100vh - 60px); */
+        left: 0;
+        top: 100px;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.85);
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .site-navbar .nav-menu ul li {
+        text-align: center;
+    }
+    .site-navbar .nav-menu ul li a {
+        padding: 25px;
+        color: #fff;
+        text-align: center;
+    }
+    .site-navbar .nav-menu ul li a:hover {
+        background-color: rgba(255, 255, 255, .1);
+    }
+    .site-navbar .nav-menu ul.open {
+        max-height: 100vh;
+        overflow: visible;
+        padding-bottom: 20px;
+    }
+    /* navbar css for mobile end */
+    .nav-menu li.active a {
+        border-bottom: 2px solid var(--hover-color);
+        color: var(--hover-color)!important;
+    }
+}
+
+@media screen and (max-width:799.98px) {
+    .header {
+        height: auto;
+        padding-top: 20%
+    }
+}
+
+@media screen and (max-width:499.98px) {
+    .header {
+        padding-top: 30%;
+    }
+    .header-subtitle {
+        font-size: 24px
+    }
+    .header-title {
+        font-size: 46px
+    }
+    .header-title-text {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width:576.98px) {
+    .strategy-container {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .callback-popup .modal-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .callback-popup .modal-header .close {
+        top: 2px;
+        right: 1px;
+        border-radius: 0;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .pricing-card-section {
+        max-width: 90%;
+    }
+}
+
+/* mobile breakpoint start */
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 720px;
+    }
+    /* navbar css for mobile start */
+    .nav-toggler {
+        display: block;
+        top: 35px;
+        right: 20px;
+    }
+    .site-navbar {
+        min-height: 60px;
+    }
+    .site-navbar .nav-menu ul {
+        position: absolute;
+        width: 100%;
+        /* height: calc(100vh - 60px); */
+        left: 0;
+        top: 100px;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.85);
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .site-navbar .nav-menu ul li {
+        text-align: center;
+    }
+    .site-navbar .nav-menu ul li a {
+        padding: 25px;
+        color: #fff;
+        text-align: center;
+    }
+    .site-navbar .nav-menu ul li a:hover {
+        background-color: rgba(255, 255, 255, .1);
+    }
+    .site-navbar .nav-menu ul.open {
+        max-height: 100vh;
+        overflow: visible;
+        padding-bottom: 20px;
+    }
+    /* navbar css for mobile end */
+    .nav-menu li.active a {
+        border-bottom: 2px solid var(--hover-color);
+        color: var(--hover-color)!important;
+    }
+}
+
+/* mobile breakpoint end */
